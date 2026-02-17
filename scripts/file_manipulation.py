@@ -1,6 +1,6 @@
 import os
 from glob import glob
-import pdf_2_img
+
 
 def fix_files_naming(circulars_dir, decree_files):
     circular_files = glob(os.path.join(circulars_dir, "*.pdf"))
