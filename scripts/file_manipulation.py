@@ -21,8 +21,8 @@ def pdf_to_imges(pdf_path, images_path):
     pass
 
 assets_dir = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/assets"
-circulars_dir = os.path.join(assets_dir, "cumhurbaskanligi_genelgeleri")
-decrees_dir = os.path.join(assets_dir, "cumhurbaskanligi_kararnameleri")
+circulars_dir = os.path.join(assets_dir, "circulars")
+decrees_dir = os.path.join(assets_dir, "decrees")
 
 if __name__ == "__main__":
     fix_files_naming(circulars_dir, decrees_dir)
