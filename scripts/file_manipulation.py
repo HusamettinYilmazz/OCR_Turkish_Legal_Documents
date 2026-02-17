@@ -1,5 +1,6 @@
 import os
 from glob import glob
+import pdf_2_img
 
 def fix_files_naming(circulars_dir, decree_files):
     circular_files = glob(os.path.join(circulars_dir, "*.pdf"))
@@ -15,6 +16,9 @@ def fix_files_naming(circulars_dir, decree_files):
         new_filename = decree_file_nopdf.replace(decree_file_nopdf, f"{decree_file_nopdf}.pdf")
         os.rename(decree_files[idx], new_filename)
 
+def pdf_to_imges(pdf_path, images_path):
+
+    pass
 
 assets_dir = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/assets"
 circulars_dir = os.path.join(assets_dir, "cumhurbaskanligi_genelgeleri")

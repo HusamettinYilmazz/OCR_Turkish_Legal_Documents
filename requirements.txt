@@ -1,0 +1,4 @@
+# python=3.11 conda version
+pdf2image==1.17.0
+pillow==12.1.0
+tqdm
