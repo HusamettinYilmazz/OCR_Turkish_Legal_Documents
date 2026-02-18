@@ -7,3 +7,5 @@ transformers==4.57.6
 torch==2.8.0
 torchvision==0.23
 torchaudio==2.8.0
+
+python-dotenv
