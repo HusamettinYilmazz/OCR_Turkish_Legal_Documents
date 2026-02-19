@@ -1,0 +1,10 @@
+experiment:
+  name: "experiment"
+  version: 1.0
+  seed: 31
+  description: "Fintuning gemma3-4b-it on Turkish Legal Documnets"
+
+data:
+  dataset_name: "Turkish Legal Documnets"
+  dataset_path: "assets"
+  output_path: "outputs"
