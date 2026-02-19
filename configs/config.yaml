@@ -8,3 +8,4 @@ data:
   dataset_name: "Turkish Legal Documnets"
   dataset_path: "assets"
   output_path: "outputs"
+  prompt_path: "prompts/extraction_prompt.txt"
