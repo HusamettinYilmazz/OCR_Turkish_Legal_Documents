@@ -8,17 +8,20 @@ import torch
 
 from PIL import Image
 
-from utils import convert_pdf_to_images, image_preprocesing
+import litellm
+from litellm import completion
 
+from utils import convert_pdf_to_images, image_preprocesing
+from utils import image_to_base64_data_uri
+from utils import Logger, load_config
 
 load_dotenv()
-assets_dir = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/assets"
-circulars_dir = os.path.join(assets_dir, "circulars")
-decrees_dir = os.path.join(assets_dir, "decrees")
-pdf_images = os.path.join(assets_dir, "pdf_images")
-prompt_path = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/prompts/extraction_prompt.txt"
+ROOT = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/"
 
-def pdf_to_images():
+def pdf_to_images(assets_dir):
+    circulars_dir = os.path.join(assets_dir, "circulars")
+    decrees_dir = os.path.join(assets_dir, "decrees")
+
     pdf_images = os.path.join(assets_dir, "pdf_images")
     os.makedirs(pdf_images, exist_ok=True)
 
@@ -79,11 +82,53 @@ def test_gemma3(hf_token, prompt, image):
     decoded = processor.decode(generation, skip_special_tokens=True)
     print(decoded)
 
-if __name__ == "__main__":
-    # pdf_to_images()
+def generate_output_gemini3(prompt, image):
+    cloud_model_id = "openai/google/gemini-3-flash-preview"
+    
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": prompt},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": image_to_base64_data_uri(image)
+                    }
+                }
+
+            ]
+        }
+    ]
+
+    response = completion(
+        model=cloud_model_id,
+        messages=messages,
+        max_tokens=4096
+    )
+
+    return response
+
+def main():
+    config_path = os.path.join(ROOT, "configs/config.yaml")
+    config = load_config(config_path)
+    
+    assets_dir = os.path.join(ROOT, config.data["dataset_path"])
+    pdf_images = os.path.join(assets_dir, "pdf_images")
+    prompt_path = os.path.join(ROOT, config.data["prompt"])
+    save_dir = os.path.join(ROOT, config.data["output"])
+    
+    # pdf_to_images(assets_dir)
 
     hf_token = os.getenv("hf_token")
     prompt = load_prompt(prompt_path)
     sample_image = Image.open(f"{pdf_images}circular_images/01/002.jpg")
 
     # test_gemma3(hf_token, prompt, sample_image)
+    logger = Logger(save_dir)
+    response = generate_output_gemini3(prompt, sample_image)
+    logger.info(response)
+    logger.info(response.choices[0].message.content)
+
+if __name__ == "__main__":
+    main()
