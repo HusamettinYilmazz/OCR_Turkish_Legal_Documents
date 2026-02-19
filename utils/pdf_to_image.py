@@ -3,6 +3,8 @@ import os
 from pdf2image import convert_from_path
 from PIL import Image, ImageEnhance
 
+import base64
+
 def image_preprocesing(image: Image, max_width: int =600) -> Image:
     """
     Args:
@@ -71,3 +73,14 @@ def convert_pdf_to_images(pdf_path, images_base_dir, max_width=600):
         generated_paths.append(image_output_path)
 
     return generated_paths
+
+def image_to_base64_data_uri(image_path):
+    """Convert image to base64 data URI for APIs"""
+    with open(image_path, 'rb') as image_file:
+        img_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Determine image type from extension
+    ext = image_path.lower().split('.')[-1]
+    mime_type = f"image/{ext}" if ext != "jpg" else "image/jpeg"
+
+    return f"data:{mime_type};base64,{img_base64}"
