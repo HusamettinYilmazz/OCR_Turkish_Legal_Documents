@@ -1,4 +1,6 @@
 # python=3.11 conda version
+python-dotenv
+
 pdf2image==1.17.0
 pillow==12.1.0
 tqdm
@@ -9,4 +11,4 @@ torch==2.8.0
 torchvision==0.23
 torchaudio==2.8.0
 
-python-dotenv
+litellm==1.73.6
