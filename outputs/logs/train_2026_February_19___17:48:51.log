@@ -1,0 +1,146 @@
+2026 February 19 17:49:19 [INFO]: ModelResponse(id='gen-1771512532-UKYiJ2llTVwX2IRdBs1v', created=1771512548, model='google/gemini-3-flash-preview', object='chat.completion', system_fingerprint=None, choices=[Choices(finish_reason='stop', index=0, message=Message(content='{\n  "document_classification": {\n    "type": "official_letter",\n    "subtype": "Circular/Presidential Decree Page",\n    "category": "administrative",\n    "primary_language": "turkish",\n    "secondary_languages": []\n  },\n  "source": {\n    "issuing_authority": "TÜRKİYE CUMHURİYETİ CUMHURBAŞKANLIĞI",\n    "department": null,\n    "location": null,\n    "document_number": null,\n    "related_references": [],\n    "dates": {\n      "primary_date": {\n        "date_text": "7 Mart 2025",\n        "calendar_type": "gregorian",\n        "date_type": "issue_date",\n        "location_in_document": "body"\n      },\n      "additional_dates": []\n    }\n  },\n  "physical_properties": {\n    "page_number": "unknown",\n    "total_pages": null,\n    "image_type": "scanned",\n    "quality": "high",\n    "color_mode": "grayscale",\n    "has_watermark": false,\n    "watermark_description": null,\n    "has_security_pattern": false,\n    "security_pattern_description": null,\n    "orientation": "portrait"\n  },\n  "official_marks": {\n    "seals": [],\n    "stamps": [],\n    "barcodes_qr": []\n  },\n  "signatures_authorization": {\n    "signatories": [\n      {\n        "name": "Recep Tayyip ERDOĞAN",\n        "name_transliteration": null,\n        "title": "CUMHURBAŞKANI",\n        "signature_type": "printed_name",\n        "position": "bottom_right",\n        "role": "primary_signatory"\n      }\n    ],\n    "approval_chain": []\n  },\n  "routing_distribution": {\n    "addressed_to": [\n      {\n        "type": "general",\n        "name": "Bilgilerini ve gereğini rica ederim.",\n        "honorific": null\n      }\n    ],\n    "carbon_copy": [],\n    "forwarded_to": [],\n    "file_reference": null,\n    "classification": null\n  },\n  "content": {\n    "subject": "Kadının güçlenmesine yönelik eylem planları ve koordinasyon çalışmaları",\n    "subject_translation": null,\n    "keywords": [\n      "Kadın erkek eşitliği",\n      "kadının güçlenmesi",\n      "İl Koordinasyon Kurulları",\n      "Eylem Planı",\n      "Valilikler"\n    ],\n    "full_text": "6- Kadın erkek eşitliğine duyarlı analiz ve bütçeleme gibi araçlar vasıtasıyla kamu politikalarının kadın erkek eşitliğine duyarlı hale getirilmesine yönelik çalışmalar gerçekleştirecektir.\\nKadının güçlenmesine ilişkin çalışmaların yerel düzeyde etkin şekilde yürütülmesi ve takibi amacıyla, tüm illerde Vali başkanlığında; Aile ve Sosyal Hizmetler, Çevre, Şehircilik ve İklim Değişikliği, Milli Eğitim, Sağlık, Sanayi ve Teknoloji, Tarım ve Orman, Ticaret, Sosyal Güvenlik, Çalışma ve İş Kurumu, Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı İl Müdürleri ile Türkiye Odalar ve Borsalar Birliği Kadın Girişimciler İl Kurulunun karar vermeye yetkili üst düzey temsilcisi ile Kalkınma Ajansları Yatırım Destek Ofisleri Koordinatörlerinin katılımıyla Kadının Güçlenmesi İl Koordinasyon Kurulları (İl Kurulları) oluşturulacaktır. İl Kurulları;\\n1- Kadının güçlenmesine ilişkin ülke düzeyinde yürütülen eylem planları ve tüm politika metinlerindeki karar ve uygulamaların yerelde tutarlı ve uyum içerisinde uygulanmasından sorumlu olacaktır.\\n2- Yerel dinamiklerin ihtiyaçları çerçevesinde kadının güçlenmesi alanında mevcut uygulamaları değerlendirerek, çözüm önerileri geliştirecektir.\\n3- Kadınların çalışma hayatına katılımını izlemek için yerel düzeyde ve sektörel bazda veri toplama ve analiz çalışmaları yapacaktır.\\n4- Kamu ve özel sektörde kadın temsilinin artırılmasını, kadınların yönetim kademelerinde yer almasını destekleyecek yerel düzeyde farkındalık çalışmalarının yürütülmesini sağlayacaktır.\\nValiliklerin himayesinde, Aile ve Sosyal Hizmetler İl Müdürlükleri koordinasyonunda ilgili tüm paydaşların katkılarıyla ilin yerel dinamiklerine uygun olarak Kadının Güçlenmesi İl Eylem Planı hazırlanacaktır. Kurul tarafından alınan kararlar Bakanlık koordinasyonunda Kadının Güçlenmesi İl Eylem Planlarına eklenecektir.\\nKadınların ekonomik ve sosyal hayatın içinde daha güçlü bir şekilde yer alması, hak, fırsat ve imkânlardan eşit şekilde yararlanmalarının sağlanması ve kadın erkek fırsat eşitliğinin tüm ana plan ve politikalara yansıtılması amacıyla yapılacak çalışmaların iş birliği ve eşgüdüm içerisinde yürütülmesi için ilgili bakanlıklar ile kamu kurum ve kuruluşları tarafından azami gayret gösterilecek, ihtiyaç duyulacak her türlü destek ve yardım sağlanacaktır.\\nBilgilerini ve gereğini rica ederim.\\n\\n7 Mart 2025\\n\\nRecep Tayyip ERDOĞAN\\nCUMHURBAŞKANI",\n    "has_tables": false,\n    "tables": [],\n    "has_lists": true,\n    "lists": [\n      {\n        "type": "numbered",\n        "items": [\n          "1- Kadının güçlenmesine ilişkin ülke düzeyinde yürütülen eylem planları ve tüm politika metinlerindeki karar ve uygulamaların yerelde tutarlı ve uyum içerisinde uygulanmasından sorumlu olacaktır.",\n          "2- Yerel dinamiklerin ihtiyaçları çerçevesinde kadının güçlenmesi alanında mevcut uygulamaları değerlendirerek, çözüm önerileri geliştirecektir.",\n          "3- Kadınların çalışma hayatına katılımını izlemek için yerel düzeyde ve sektörel bazda veri toplama ve analiz çalışmaları yapacaktır.",\n          "4- Kamu ve özel sektörde kadın temsilinin artırılmasını, kadınların yönetim kademelerinde yer almasını destekleyecek yerel düzeyde farkındalık çalışmalarının yürütülmesini sağlayacaktır."\n        ]\n      }\n    ],\n    "has_charts": false,\n    "charts": [],\n    "legal_articles": [],\n    "financial_data": []\n  },\n  "structural_elements": {\n    "header": {\n      "present": false,\n      "content": null,\n      "has_logo": false,\n      "logo_description": null,\n      "reference_numbers": []\n    },\n    "footer": {\n      "present": false,\n      "content": null,\n      "has_page_number": false,\n      "page_info": null\n    },\n    "letterhead": {\n      "present": false,\n      "organization_name": null,\n      "organization_name_secondary": null,\n      "emblem_description": null,\n      "contact_info": null\n    },\n    "margins_notes": {\n      "has_margin_notes": false,\n      "margin_content": null\n    }\n  },\n  "attachments_references": {\n    "attachments_mentioned": [],\n    "referenced_documents": []\n  },\n  "condition_notes": {\n    "completeness": "partial",\n    "legibility_issues": [],\n    "physical_damage": "none",\n    "damage_description": null,\n    "handwritten_annotations": {\n      "present": false,\n      "description": null\n    },\n    "special_observations": "This appears to be a concluding page of a multi-page presidential circular."\n  },\n  "confidence_quality": {\n    "overall_confidence": "high",\n    "uncertain_elements": [],\n    "requires_manual_review": false,\n    "review_reasons": []\n  }\n}', role='assistant', tool_calls=None, function_call=None, provider_specific_fields={'refusal': None, 'reasoning': None, 'reasoning_details': [{'format': 'google-gemini-v1', 'index': 0, 'type': 'reasoning.encrypted', 'data': 'EjQKMgG+Pvb7BKdP9JLOi4sJeprxoFxB+/J2YsYtGpTVz46T/xcBlNSQ8Wqie4sLQ9glo0Kx'}]}, annotations=[]), provider_specific_fields={'native_finish_reason': 'STOP'})], usage=Usage(completion_tokens=1884, prompt_tokens=6442, total_tokens=8326, completion_tokens_details=CompletionTokensDetailsWrapper(accepted_prediction_tokens=None, audio_tokens=None, reasoning_tokens=0, rejected_prediction_tokens=None, text_tokens=None, image_tokens=0), prompt_tokens_details=PromptTokensDetailsWrapper(audio_tokens=0, cached_tokens=0, text_tokens=None, image_tokens=None, cache_write_tokens=0, video_tokens=0), cost=0.008873, is_byok=False, cost_details={'upstream_inference_cost': 0.008873, 'upstream_inference_prompt_cost': 0.003221, 'upstream_inference_completions_cost': 0.005652}), service_tier=None, provider='Google AI Studio')
+2026 February 19 17:49:19 [INFO]: {
+  "document_classification": {
+    "type": "official_letter",
+    "subtype": "Circular/Presidential Decree Page",
+    "category": "administrative",
+    "primary_language": "turkish",
+    "secondary_languages": []
+  },
+  "source": {
+    "issuing_authority": "TÜRKİYE CUMHURİYETİ CUMHURBAŞKANLIĞI",
+    "department": null,
+    "location": null,
+    "document_number": null,
+    "related_references": [],
+    "dates": {
+      "primary_date": {
+        "date_text": "7 Mart 2025",
+        "calendar_type": "gregorian",
+        "date_type": "issue_date",
+        "location_in_document": "body"
+      },
+      "additional_dates": []
+    }
+  },
+  "physical_properties": {
+    "page_number": "unknown",
+    "total_pages": null,
+    "image_type": "scanned",
+    "quality": "high",
+    "color_mode": "grayscale",
+    "has_watermark": false,
+    "watermark_description": null,
+    "has_security_pattern": false,
+    "security_pattern_description": null,
+    "orientation": "portrait"
+  },
+  "official_marks": {
+    "seals": [],
+    "stamps": [],
+    "barcodes_qr": []
+  },
+  "signatures_authorization": {
+    "signatories": [
+      {
+        "name": "Recep Tayyip ERDOĞAN",
+        "name_transliteration": null,
+        "title": "CUMHURBAŞKANI",
+        "signature_type": "printed_name",
+        "position": "bottom_right",
+        "role": "primary_signatory"
+      }
+    ],
+    "approval_chain": []
+  },
+  "routing_distribution": {
+    "addressed_to": [
+      {
+        "type": "general",
+        "name": "Bilgilerini ve gereğini rica ederim.",
+        "honorific": null
+      }
+    ],
+    "carbon_copy": [],
+    "forwarded_to": [],
+    "file_reference": null,
+    "classification": null
+  },
+  "content": {
+    "subject": "Kadının güçlenmesine yönelik eylem planları ve koordinasyon çalışmaları",
+    "subject_translation": null,
+    "keywords": [
+      "Kadın erkek eşitliği",
+      "kadının güçlenmesi",
+      "İl Koordinasyon Kurulları",
+      "Eylem Planı",
+      "Valilikler"
+    ],
+    "full_text": "6- Kadın erkek eşitliğine duyarlı analiz ve bütçeleme gibi araçlar vasıtasıyla kamu politikalarının kadın erkek eşitliğine duyarlı hale getirilmesine yönelik çalışmalar gerçekleştirecektir.\nKadının güçlenmesine ilişkin çalışmaların yerel düzeyde etkin şekilde yürütülmesi ve takibi amacıyla, tüm illerde Vali başkanlığında; Aile ve Sosyal Hizmetler, Çevre, Şehircilik ve İklim Değişikliği, Milli Eğitim, Sağlık, Sanayi ve Teknoloji, Tarım ve Orman, Ticaret, Sosyal Güvenlik, Çalışma ve İş Kurumu, Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı İl Müdürleri ile Türkiye Odalar ve Borsalar Birliği Kadın Girişimciler İl Kurulunun karar vermeye yetkili üst düzey temsilcisi ile Kalkınma Ajansları Yatırım Destek Ofisleri Koordinatörlerinin katılımıyla Kadının Güçlenmesi İl Koordinasyon Kurulları (İl Kurulları) oluşturulacaktır. İl Kurulları;\n1- Kadının güçlenmesine ilişkin ülke düzeyinde yürütülen eylem planları ve tüm politika metinlerindeki karar ve uygulamaların yerelde tutarlı ve uyum içerisinde uygulanmasından sorumlu olacaktır.\n2- Yerel dinamiklerin ihtiyaçları çerçevesinde kadının güçlenmesi alanında mevcut uygulamaları değerlendirerek, çözüm önerileri geliştirecektir.\n3- Kadınların çalışma hayatına katılımını izlemek için yerel düzeyde ve sektörel bazda veri toplama ve analiz çalışmaları yapacaktır.\n4- Kamu ve özel sektörde kadın temsilinin artırılmasını, kadınların yönetim kademelerinde yer almasını destekleyecek yerel düzeyde farkındalık çalışmalarının yürütülmesini sağlayacaktır.\nValiliklerin himayesinde, Aile ve Sosyal Hizmetler İl Müdürlükleri koordinasyonunda ilgili tüm paydaşların katkılarıyla ilin yerel dinamiklerine uygun olarak Kadının Güçlenmesi İl Eylem Planı hazırlanacaktır. Kurul tarafından alınan kararlar Bakanlık koordinasyonunda Kadının Güçlenmesi İl Eylem Planlarına eklenecektir.\nKadınların ekonomik ve sosyal hayatın içinde daha güçlü bir şekilde yer alması, hak, fırsat ve imkânlardan eşit şekilde yararlanmalarının sağlanması ve kadın erkek fırsat eşitliğinin tüm ana plan ve politikalara yansıtılması amacıyla yapılacak çalışmaların iş birliği ve eşgüdüm içerisinde yürütülmesi için ilgili bakanlıklar ile kamu kurum ve kuruluşları tarafından azami gayret gösterilecek, ihtiyaç duyulacak her türlü destek ve yardım sağlanacaktır.\nBilgilerini ve gereğini rica ederim.\n\n7 Mart 2025\n\nRecep Tayyip ERDOĞAN\nCUMHURBAŞKANI",
+    "has_tables": false,
+    "tables": [],
+    "has_lists": true,
+    "lists": [
+      {
+        "type": "numbered",
+        "items": [
+          "1- Kadının güçlenmesine ilişkin ülke düzeyinde yürütülen eylem planları ve tüm politika metinlerindeki karar ve uygulamaların yerelde tutarlı ve uyum içerisinde uygulanmasından sorumlu olacaktır.",
+          "2- Yerel dinamiklerin ihtiyaçları çerçevesinde kadının güçlenmesi alanında mevcut uygulamaları değerlendirerek, çözüm önerileri geliştirecektir.",
+          "3- Kadınların çalışma hayatına katılımını izlemek için yerel düzeyde ve sektörel bazda veri toplama ve analiz çalışmaları yapacaktır.",
+          "4- Kamu ve özel sektörde kadın temsilinin artırılmasını, kadınların yönetim kademelerinde yer almasını destekleyecek yerel düzeyde farkındalık çalışmalarının yürütülmesini sağlayacaktır."
+        ]
+      }
+    ],
+    "has_charts": false,
+    "charts": [],
+    "legal_articles": [],
+    "financial_data": []
+  },
+  "structural_elements": {
+    "header": {
+      "present": false,
+      "content": null,
+      "has_logo": false,
+      "logo_description": null,
+      "reference_numbers": []
+    },
+    "footer": {
+      "present": false,
+      "content": null,
+      "has_page_number": false,
+      "page_info": null
+    },
+    "letterhead": {
+      "present": false,
+      "organization_name": null,
+      "organization_name_secondary": null,
+      "emblem_description": null,
+      "contact_info": null
+    },
+    "margins_notes": {
+      "has_margin_notes": false,
+      "margin_content": null
+    }
+  },
+  "attachments_references": {
+    "attachments_mentioned": [],
+    "referenced_documents": []
+  },
+  "condition_notes": {
+    "completeness": "partial",
+    "legibility_issues": [],
+    "physical_damage": "none",
+    "damage_description": null,
+    "handwritten_annotations": {
+      "present": false,
+      "description": null
+    },
+    "special_observations": "This appears to be a concluding page of a multi-page presidential circular."
+  },
+  "confidence_quality": {
+    "overall_confidence": "high",
+    "uncertain_elements": [],
+    "requires_manual_review": false,
+    "review_reasons": []
+  }
+}
