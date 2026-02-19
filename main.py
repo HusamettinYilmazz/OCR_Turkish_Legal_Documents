@@ -115,14 +115,18 @@ def main():
     
     assets_dir = os.path.join(ROOT, config.data["dataset_path"])
     pdf_images = os.path.join(assets_dir, "pdf_images")
-    prompt_path = os.path.join(ROOT, config.data["prompt"])
-    save_dir = os.path.join(ROOT, config.data["output"])
+    prompt_path = os.path.join(ROOT, config.data["prompt_path"])
+    save_dir = os.path.join(ROOT, config.data["output_path"])
     
     # pdf_to_images(assets_dir)
 
     hf_token = os.getenv("hf_token")
+    open_router_key = os.getenv("open_router_key")
+    os.environ["OPENAI_API_KEY"] = open_router_key
+    os.environ["OPENAI_BASE_URL"] = "https://openrouter.ai/api/v1"
+    
     prompt = load_prompt(prompt_path)
-    sample_image = Image.open(f"{pdf_images}circular_images/01/002.jpg")
+    sample_image = os.path.join(pdf_images, "circular_images/01/002.jpg")
 
     # test_gemma3(hf_token, prompt, sample_image)
     logger = Logger(save_dir)
