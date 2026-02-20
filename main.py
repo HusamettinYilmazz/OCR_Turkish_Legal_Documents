@@ -193,11 +193,20 @@ def knowladge_distilation(save_dir, pdf_images_dict, prompt):
     return input_cost, output_cost
 
 def build_dataset(config):
-    dataset_path = os.path.join(ROOT, "outputs/llm_response/image_ocr.jsonl")
+    llm_response_path = os.path.join(ROOT, "outputs/llm_response/image_ocr.jsonl")
     task_1_prompt = load_prompt(os.path.join(ROOT, "prompts/task1.txt"))
     task_2_prompt = load_prompt(os.path.join(ROOT, "prompts/task2.txt"))
-    train_ds, val_ds = get_dataset(config, dataset_path, task_1_prompt, task_2_prompt)
-    return train_ds, val_ds
+    train_ds, val_ds = get_dataset(config, llm_response_path, task_1_prompt, task_2_prompt)
+    
+    dataset_dir = os.path.join(ROOT, "assets", "llamafactory_ocr_finetune_data")
+    os.makedirs(dataset_dir, exist_ok=True)
+
+    with open(os.path.join(dataset_dir, "train.json"), "w") as dest:
+        json.dump(train_ds, dest, ensure_ascii=False, default=str)
+
+    with open(os.path.join(dataset_dir, "val.json"), "w") as dest:
+        json.dump(val_ds, dest, ensure_ascii=False, default=str)
+
 
 
 def main():
@@ -220,9 +229,7 @@ def main():
     # test_gemma3(hf_token, prompt, sample_image)
     # input_cost, output_cost = knowladge_distilation(save_dir, pdf_images_dict, prompt)
 
-    train_ds, val_ds = build_dataset(config)
-
-    print()
+    build_dataset(config)
 
 if __name__ == "__main__":
     main()
