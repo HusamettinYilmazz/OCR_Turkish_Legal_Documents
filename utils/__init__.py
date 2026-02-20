@@ -3,3 +3,4 @@ from .pdf_to_image import image_to_base64_data_uri
 
 from .logger import Logger
 from .helper import load_config, get_last_row
+from .helper import parse_json

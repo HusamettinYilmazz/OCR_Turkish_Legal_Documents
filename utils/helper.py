@@ -1,5 +1,6 @@
 import yaml
 import json
+import json_repair
 
 class Config:
     def __init__(self, config_dict):
@@ -24,3 +25,9 @@ def get_last_row(jsonl_path):
         return None
 
     return json.loads(lines[-1])
+
+def parse_json(text):
+    try:
+        return json_repair.loads(text)
+    except:
+        return None
