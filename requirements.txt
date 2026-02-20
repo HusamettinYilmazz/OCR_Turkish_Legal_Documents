@@ -4,6 +4,7 @@ python-dotenv
 pdf2image==1.17.0
 pillow==12.1.0
 tqdm
+json_repair
 
 transformers==4.57.6
 accelerate==1.12.0
