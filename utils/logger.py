@@ -15,7 +15,7 @@ class Logger:
         self.logger = self._setup_logger()
 
     def _setup_logger(self):
-        logger = logging.getLogger(f"kaggle_logger_{datetime.now().strftime('%H%M')}")
+        logger = logging.getLogger(f"logger_{datetime.now().strftime('%H%M')}")
         logger.setLevel(logging.INFO)
 
         if logger.hasHandlers:
