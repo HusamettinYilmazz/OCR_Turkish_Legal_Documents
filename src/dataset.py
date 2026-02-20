@@ -70,7 +70,7 @@ def get_dataset(config, dataset_path, task_1_prompt, task_2_prompt):
             ]
         }
 
-        if record['pdf_name'] in val_files['pdf_type']:
+        if record['pdf_name'] in val_files[record['pdf_type']]:
             val_ds.append(task_1_message)
             val_ds.append(task_2_message)
         else:

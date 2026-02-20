@@ -17,6 +17,8 @@ from utils import convert_pdf_to_images, image_preprocesing
 from utils import image_to_base64_data_uri
 from utils import Logger, load_config, get_last_row
 
+from src import get_dataset
+
 load_dotenv()
 ROOT = "/home/husammm/Desktop/courses/cs_courses/DL/projects/vlm_ocr_turkish/"
 
@@ -190,6 +192,14 @@ def knowladge_distilation(save_dir, pdf_images_dict, prompt):
     logger.info(f"Total number of images: {img_idx}")
     return input_cost, output_cost
 
+def build_dataset(config):
+    dataset_path = os.path.join(ROOT, "outputs/llm_response/image_ocr.jsonl")
+    task_1_prompt = load_prompt(os.path.join(ROOT, "prompts/task1.txt"))
+    task_2_prompt = load_prompt(os.path.join(ROOT, "prompts/task2.txt"))
+    train_ds, val_ds = get_dataset(config, dataset_path, task_1_prompt, task_2_prompt)
+    return train_ds, val_ds
+
+
 def main():
     config_path = os.path.join(ROOT, "configs/config.yaml")
     config = load_config(config_path)
@@ -204,13 +214,15 @@ def main():
     os.environ["OPENAI_API_KEY"] = open_router_key
     os.environ["OPENAI_BASE_URL"] = "https://openrouter.ai/api/v1"
     
-    pdf_images_dict = pdf_its_images(pdf_images)
-    prompt = load_prompt(prompt_path)
+    # pdf_images_dict = pdf_its_images(pdf_images)
+    # prompt = load_prompt(prompt_path)
     
-    input_cost, output_cost = knowladge_distilation(save_dir, pdf_images_dict, prompt)
-
     # test_gemma3(hf_token, prompt, sample_image)
+    # input_cost, output_cost = knowladge_distilation(save_dir, pdf_images_dict, prompt)
 
+    train_ds, val_ds = build_dataset(config)
+
+    print()
 
 if __name__ == "__main__":
     main()

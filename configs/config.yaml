@@ -9,6 +9,6 @@ data:
   dataset_path: "assets"
   output_path: "outputs"
   prompt_path: "prompts/extraction_prompt.txt"
-  val: {"circular": ["07.pdf", "18.pdf"],
-        "decree":   ["31.pdf", "47.pdf"]}
+  val: {"circular": ["07", "18"],
+        "decrees":   ["31", "47"]}
     
