@@ -1,4 +1,5 @@
 import yaml
+import json
 
 class Config:
     def __init__(self, config_dict):
@@ -15,3 +16,11 @@ def load_config(config_path="config.yaml"):
     config = Config(config)
     return config
 
+def get_last_row(jsonl_path):
+    with open(jsonl_path, "r", encoding="utf8") as f:
+        lines = [line.strip() for line in f if line.strip()]
+
+    if not lines:
+        return None
+
+    return json.loads(lines[-1])
