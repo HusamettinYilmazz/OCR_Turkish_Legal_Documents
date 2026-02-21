@@ -1,3 +1,3 @@
 [submodule "LlamaFactory"]
 	path = LlamaFactory
-	url = https://github.com/hiyouga/LlamaFactory.git
+	url = git@github.com:HusamettinYilmazz/LlamaFactory.git
