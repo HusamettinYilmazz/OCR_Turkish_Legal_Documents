@@ -13,3 +13,8 @@ torchvision==0.23
 torchaudio==2.8.0
 
 litellm==1.73.6
+
+## LlamaFactory installation:
+# git clone --depth 1 https://github.com/hiyouga/LlamaFactory.git
+# cd LlamaFactory
+# pip install -e .

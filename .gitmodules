@@ -1,0 +1,3 @@
+[submodule "LlamaFactory"]
+	path = LlamaFactory
+	url = https://github.com/hiyouga/LlamaFactory.git
