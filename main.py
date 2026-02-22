@@ -5,6 +5,8 @@ import requests
 from tqdm import tqdm
 import json
 
+import wandb
+
 from transformers import Gemma3ForConditionalGeneration, AutoProcessor
 import torch
 
@@ -222,7 +224,9 @@ def main():
     open_router_key = os.getenv("open_router_key")
     os.environ["OPENAI_API_KEY"] = open_router_key
     os.environ["OPENAI_BASE_URL"] = "https://openrouter.ai/api/v1"
-    
+    wandb_key = os.getenv("wandb_key")
+    os.environ["WANDB_API_KEY"] = wandb_key
+    wandb.login()
     # pdf_images_dict = pdf_its_images(pdf_images)
     # prompt = load_prompt(prompt_path)
     
