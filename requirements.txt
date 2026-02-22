@@ -18,3 +18,6 @@ litellm==1.73.6
 # git clone --depth 1 https://github.com/hiyouga/LlamaFactory.git
 # cd LlamaFactory
 # pip install -e .
+
+wandb==0.25.0
+weave==0.52.28
