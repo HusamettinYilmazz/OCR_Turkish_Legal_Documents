@@ -22,7 +22,6 @@
 
 
 ## Usage
-
 ---
 
 
@@ -65,6 +64,7 @@ print(f"Local repo path: {path}")
 
 
 ## Example Outputs
+---
 
 Below is a comparison between:
 
@@ -116,3 +116,20 @@ Under:\
 [lora_outputs](https://github.com/HusamettinYilmazz/OCR_Turkish_Legal_Documents/tree/main/experiments/evaluation/lora_outputs.jsonl) for LoRA outputs (Use checkpoint: "1700" for the best output)
 
 You can use these files to perform detailed comparison.
+
+
+## Dataset
+---
+
+The dataset consists of publicly available Turkish legal documents, specifically:
+
+- Presidential Decrees (*Cumhurbaşkanlığı Kararnameleri*)
+- Presidential Circulars (*Cumhurbaşkanlığı Genelgeleri*)
+
+These documents are published by the Turkish Ministry of Justice and are open for public access and use.
+
+You can browse and download the original PDFs from:
+
+**Adalet Bakanlığı Mevzuat Portalı**  
+https://mevzuat.adalet.gov.tr/
+
