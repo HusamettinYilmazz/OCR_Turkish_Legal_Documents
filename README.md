@@ -63,4 +63,56 @@ path = snapshot_download(
 print(f"Local repo path: {path}")
 ```
 
+
 ## Example Outputs
+
+Below is a comparison between:
+
+- Raw PDF
+- Output of base model (`gemma-3-4b-it`)
+- Output of finetuned model (LoRA)
+
+### PDF
+
+<img src="assets/examples/example.png" width="600">
+
+---
+
+### Base Model Output (without LoRA)
+
+<img src="assets/examples/example_base_model_output.png" width="600">
+
+The base model produces incomplete extraction with wrong words.
+
+---
+
+### Finetuned Model Output (with LoRA)
+
+<img src="assets/examples/example_lora_output.png" width="600">
+
+finetuned model extracts almost exact words and data about the document like:
+- Subject
+- Key words
+- Tables
+- Lists
+- Charts
+- etc...
+
+This is only a visual example. go to [Full Comparison](#full-comparison) for better evaluation
+---
+
+### Full Comparison
+
+Full outputs for all evaluation images, including:
+
+- Base model outputs
+- Outputs of all LoRA checkpoints
+
+are available in:
+[evaluation](https://github.com/HusamettinYilmazz/OCR_Turkish_Legal_Documents/tree/main/experiments/evaluation)
+
+Under:\
+[base_outputs](https://github.com/HusamettinYilmazz/OCR_Turkish_Legal_Documents/tree/main/experiments/evaluation/base_outputs.jsonl) for Base model outputs\
+[lora_outputs](https://github.com/HusamettinYilmazz/OCR_Turkish_Legal_Documents/tree/main/experiments/evaluation/lora_outputs.jsonl) for LoRA outputs (Use checkpoint: "1700" for the best output)
+
+You can use these files to perform detailed comparison.

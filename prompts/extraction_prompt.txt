@@ -519,7 +519,7 @@ Ek     : ______           Konu  : [subject]
 
 ## Validation Checklist
 Before returning JSON:
-- [ ] All Arabic text kept in Arabic (not romanized)
+- [ ] All Turkish text kept in Turkish (not romanized)
 - [ ] Primary document date separated from reference dates
 - [ ] Document number vs file reference separated
 - [ ] Names and titles in original script
