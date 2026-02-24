@@ -15,7 +15,9 @@
 
 2. [Example Outputs](#example-outputs)
 3. [Dataset](#dataset)
-4. [Training](#training)
+4. [Training Process](#training-process)
+    - [Synthetic Data Generation](#1-Gemini-Outputs-(Synthetic-data-to-train-Gemma))
+    - [Gemma3-4b-it Finetuning](#2-Gemma3-4b-it-Finetuning)
 5. [Evaluation](#evaluation) 
     - [Gemma3-4b-it Output](#gemma_output)
     - [LoRA Output](#lora_output)
@@ -132,4 +134,36 @@ You can browse and download the original PDFs from:
 
 **Adalet Bakanlığı Mevzuat Portalı**  
 https://mevzuat.adalet.gov.tr/
+
+## Training Process
+---
+
+### Gemini Outputs (Synthetic data to train Gemma)
+
+Gemini-3 Flash was used to generate structured outputs from Turkish legal document images.
+These outputs serve as synthetic training data for Gemma-3-4B-it.
+
+OpenRouter was used to access Gemini-3 Flash and generation process.
+The resulting dataset consists of image-prompt pairs and their corresponding structured JSON outputs.
+
+---
+
+### 2 Gemma3-4b-it Finetuning
+
+Gemma-3-4B-it was finetuned using LoRA with the LlamaFactory framework.
+
+Training was performed on Vast.ai using an RTX 5090 GPU (32GB VRAM).
+
+Weights & Biases (wandb) was used to track:
+
+- training loss  
+- evaluation loss  
+- learning rate  
+- gradients  
+- and overall training progress  
+
+All training checkpoints were automatically pushed and stored on Hugging Face:
+
+**Checkpoints repository:**  
+<https://huggingface.co/husammm/V3>
 
