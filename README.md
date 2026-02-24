@@ -13,7 +13,9 @@
     - [Install Dependencies](#3-install-the-required-dependencies)
     - [Download Model Checkpoint](#4-download-the-model-checkpoint)
 
-2. [Example Outputs](#example-outputs)
+2. [Outputs](#outputs)
+    - [Example Output](#1-example-output)
+    - [Full Outputs](#2-full-outputs)
 3. [Dataset](#dataset)
 4. [Training Process](#training-process)
     - [Synthetic Data Generation](#1-Gemini-Outputs-(Synthetic-data-to-train-Gemma))
@@ -65,22 +67,23 @@ print(f"Local repo path: {path}")
 ```
 
 
-## Example Outputs
+## Outputs
 ---
 
+### 1. Example Output
 Below is a comparison between:
 
 - Raw PDF
 - Output of base model (`gemma-3-4b-it`)
 - Output of finetuned model (LoRA)
 
-### PDF
+#### PDF
 
 <img src="assets/examples/example.png" width="600">
 
 ---
 
-### Base Model Output (without LoRA)
+#### Base Model Output (without LoRA)
 
 <img src="assets/examples/example_base_model_output.png" width="600">
 
@@ -88,7 +91,7 @@ The base model produces incomplete extraction with wrong words.
 
 ---
 
-### Finetuned Model Output (with LoRA)
+#### Finetuned Model Output (with LoRA)
 
 <img src="assets/examples/example_lora_output.png" width="600">
 
@@ -100,10 +103,10 @@ finetuned model extracts almost exact words and data about the document like:
 - Charts
 - etc...
 
-This is only a visual example. go to [Full Comparison](#full-comparison) for better evaluation
+This is only a visual example. for full comparison visit [Full Outputs](#full-outputs)
 ---
 
-### Full Comparison
+### 2. Full Outputs
 
 Full outputs for all evaluation images, including:
 
