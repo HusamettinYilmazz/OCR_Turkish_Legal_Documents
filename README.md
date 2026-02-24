@@ -20,7 +20,7 @@
 4. [Training Process](#training-process)
     - [Synthetic Data Generation](#1-Gemini-Outputs-(Synthetic-data-to-train-Gemma))
     - [Gemma3-4b-it Finetuning](#2-Gemma3-4b-it-Finetuning)
-5. [Evaluation](#evaluation) 
+5. [Training and Validation Metrics](#training-and-validation-metrics) 
     - [Gemma3-4b-it Output](#gemma_output)
     - [LoRA Output](#lora_output)
 
@@ -170,3 +170,48 @@ All training checkpoints were automatically pushed and stored on Hugging Face:
 **Checkpoints repository:**  
 <https://huggingface.co/husammm/V3>
 
+
+
+## Training and Validation Metrics
+
+### Training Metrics
+
+The following plots were tracked using Weights & Biases during finetuning.
+
+#### Training Loss
+
+<p align="center">
+  <img src="assets/metrics/train_loss.png" width="700">
+</p>
+
+---
+
+#### Validation Loss
+
+<p align="center">
+  <img src="assets/metrics/val_loss.png" width="700">
+
+Even if the validation loss appears to diverage but manual inspectation showed better results for later checkpoints 
+
+Possible 2 reasons:
+- The training loss is only a proxy for the objective and doesn't directly reflect the real task objective.
+- The validation set is relatively small
+
+It is expected that with more training (more epochs), the validation loss may converge again.
+</p>
+
+---
+
+#### Learning Rate
+
+<p align="center">
+  <img src="assets/metrics/lr.png" width="700">
+</p>
+
+---
+
+#### GPU Memory Usage
+
+<p align="center">
+  <img src="assets/metrics/gpu_usage.png" width="700">
+</p>
