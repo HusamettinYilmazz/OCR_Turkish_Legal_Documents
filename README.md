@@ -21,9 +21,7 @@
     - [Synthetic Data Generation](#1-Gemini-Outputs-(Synthetic-data-to-train-Gemma))
     - [Gemma3-4b-it Finetuning](#2-Gemma3-4b-it-Finetuning)
 5. [Training and Validation Metrics](#training-and-validation-metrics) 
-    - [Gemma3-4b-it Output](#gemma_output)
-    - [LoRA Output](#lora_output)
-
+    
 
 ## Usage
 ---
@@ -173,8 +171,6 @@ All training checkpoints were automatically pushed and stored on Hugging Face:
 
 
 ## Training and Validation Metrics
-
-### Training Metrics
 
 The following plots were tracked using Weights & Biases during finetuning.
 
